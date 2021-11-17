@@ -4,6 +4,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PingBerry</title>
+
+	<link rel="fav icon" href="https://github.com/Berry-Foundations/PingBerry/blob/main/PingBerry.png?raw=true">
+
+	<meta name="description" content="PingBerry is an awesome and useful Berry bot which tells details about pings received by user in server when user was offline.">
+	<meta property="og:url" content="https://pingberry.attaditya.repl.co/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="PingBerry">
+	<meta property="og:description" content="PingBerry is an awesome and useful Berry bot which tells details about pings received by user in server when user was offline.">
+	<meta property="og:image" content="https://github.com/Berry-Foundations/PingBerry/blob/main/PingBerry Social.png?raw=true">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="pingberry.attaditya.repl.co">
+	<meta property="twitter:url" content="https://pingberry.attaditya.repl.co/">
+	<meta name="twitter:title" content="PingBerry">
+	<meta name="twitter:description" content="PingBerry is an awesome and useful Berry bot which tells details about pings received by user in server when user was offline.">
+	<meta name="twitter:image" content="https://github.com/Berry-Foundations/PingBerry/blob/main/PingBerry Social.png?raw=true">
 	
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
@@ -18,6 +33,61 @@
 			background: var(--bg);
 			color: var(--c1);
 			font-family: "Mochiy Pop P One", sans-serif;
+			font-size: 24px;
+			cursor: default;
+			transition: 0.3s;
+		}
+
+		::selection {
+			background: var(--c2);
+		}
+
+		.foot {
+			position: fixed;
+			bottom: 5%;
+			left: 50%;
+			font-size: 12px;
+			-ms-transform: translateX(-50%);
+			transform: translateX(-50%);
+			background: var(--c2);
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		button {
+			background: var(--c2);
+			padding: 10px;
+			border-radius: 10px;
+			outline: none;
+			border: 5px solid var(--c1);
+			cursor: pointer;
+			font-size: 18px;
+		}
+
+		button:hover {
+			font-size: 24px;
+		}
+
+		center {
+			background: transparent;
+			font-size: inherit;
+		}
+
+		::-webkit-scrollbar {
+			width: 5px;
+			height: 5px;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: var(--c2);
+		}
+
+		::-webkit-scrollbar-track {
+			background: var(--c1);
+		}
+
+		#banner {
+			width: 50%;
 		}
 	</style>
 
@@ -28,13 +98,17 @@
 	</script>
 </head>
 <body>
-	<button onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=895701111074328586&permissions=76864&scope=bot');">Add Bot</button>
-	<br>
-	Services Under Berry Foundations - Attachment Studios
-	<br>
-	<br>
-	<br>
-	<h1>PingBerry</h1>
-	PingBerry is an awesome and useful Berry bot which tells details about pings received by user in server when user was offline.
+	<center>
+		<img id="banner" src="https://github.com/Berry-Foundations/PingBerry/blob/main/PingBerry%20Social.png?raw=true" />
+		<br>
+		<button onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=895701111074328586&permissions=76864&scope=bot');">Add Bot</button>
+		<br>
+		PingBerry is an awesome and useful Berry bot which tells details about pings received by user in server when user was offline.
+		<div class="foot">
+			<center>
+				Services Under <img src="https://images-ext-2.discordapp.net/external/F-0SimQmCZdZYfFIO_oOTKp7qi3H7uVy0vjQafo4Owo/https/images-ext-1.discordapp.net/external/x_dF_ppBthHmRPQi75iuRXLMfK0wuAW2sBLTdtNlXAc/%253Fsize%253D1024/https/cdn.discordapp.com/avatars/894098855220617216/d9b9a3b48a054b9847401bb9178ed438.webp" height="12px" /> Berry Foundations - Attachment Studios
+			</center>
+		</div>
+	</center>
 </body>
 </html>

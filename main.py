@@ -19,10 +19,6 @@ async def on_ready():
 	print(f'{client.user} is active.')
 
 @client.event
-async def on_member_join(member):
-	await pingbot.request(member, client, member.guild)
-
-@client.event
 async def on_message(ctx):
 	if ctx.author == client.user:
 		return
